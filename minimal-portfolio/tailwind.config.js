@@ -7,6 +7,9 @@ export default {
       fontFamily: {
         inter: ["inter", "serif"],
       },
+      colors: {
+        'the-blue' : '#2978b5'
+      }
     },
   },
   plugins: [],
