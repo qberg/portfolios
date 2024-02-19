@@ -1,39 +1,48 @@
-import React from 'react'
+import React from "react";
 
-import { about } from '../data/about'
+import { about } from "../data/about";
+import Button from "./ui/Button";
 
 const Intro = () => {
   const { name, role, description, resume, social } = about;
   return (
-    <div className='flex items-center justify-center flex-col text-center pt-20 pb-6'>
-      <h1 className='text-4xl md:text-6xl mb-1 md:mb-3 font-bold'>Hi, I am{' '} 
-        <span className='text-the-blue'>
-          {name}.
-        </span>
+    <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
+      <h1 className="text-4xl md:text-6xl mb-1 md:mb-3 font-bold">
+        Hi, I am <span className="text-the-blue">{name}.</span>
       </h1>
-      <p className='text-base md:text-xl mb-3 font-medium text-gray-800'>{role}</p>
-      <p className='text-sm max-w-xl mb-6'>Hello, I’m Naveen Prashanna Gurumurthy, a passionate computer scientist specializing in Intelligent Systems. I’m currently pursuing a Master of Science degree at the{' '}
+      <p className="text-base md:text-xl mb-3 font-medium text-gray-800">
+        {role}
+      </p>
+      <p className="text-sm max-w-xl mb-6">
+        Hello, I’m Naveen Prashanna Gurumurthy, a passionate computer scientist
+        specializing in Intelligent Systems. I’m currently pursuing a Master of
+        Science degree at the{" "}
         <a
           href="https://www.utdallas.edu/"
           target="_blank"
-          className='text-blue-600 hover:underline underline-offset-2'
+          className="text-the-blue hover:underline underline-offset-2"
           rel="noreferrer noopener"
         >
           University of Texas at Dallas
-        </a>{' '}
-        building upon my strong educational foundation from the{' '}
+        </a>{" "}
+        building upon my strong educational foundation from the{" "}
         <a
-          href='https://www.iitm.ac.in/'
-          target='_blank'
-          className='text-blue-600 hover:underline'
-          rel='noreferrer noopener'
+          href="https://www.iitm.ac.in/"
+          target="_blank"
+          className="text-the-blue hover:underline"
+          rel="noreferrer noopener"
         >
           Indian Institute of Technology Madras (IIT-M)
         </a>
-        , where I earned a Bachelor + Master of Technology degree in Mechanical Engineering with a Minor in Artificial Intelligence and Machine Learning.
+        , where I earned a Bachelor + Master of Technology degree in Mechanical
+        Engineering with a Minor in Artificial Intelligence and Machine
+        Learning.
       </p>
+      <div className="flex flex-row">
+        <Button href={resume} text="Resume" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;
