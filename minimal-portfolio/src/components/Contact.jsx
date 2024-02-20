@@ -39,12 +39,13 @@ const Contact = () => {
       <Title>Get in Touch</Title>
       <div className="flex flex-col items-center justify-center text-center">
         <p className="text-sm max-w-xl mb-6">
-          I am looking for this and that job in the field of computer science.
-          Whether you know of an opportunity or just want to say hello, feel
-          free to drop a message. Please be sure to checkout my social media
-          profiles as well.
+          I’m excited to continue my journey in the field of artificial
+          intelligence and intelligent systems, aiming to contribute
+          meaningfully to this rapidly evolving landscape. Whether you know of
+          an opportunity or just want to say hello, feel free to drop a message.
+          Please be sure to checkout my social media profiles as well.
         </p>
-        <div className="mb-2">
+        <div className="mb-4">
           <Button href="#" text="Say Hello" />
         </div>
         <ul className="flex p-4 gap-4 sm:gap-8">
