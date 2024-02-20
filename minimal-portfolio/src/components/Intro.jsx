@@ -7,7 +7,7 @@ const Intro = () => {
   const { name, role, description, resume, social } = about;
   return (
     <section id="intro">
-      <div className="flex items-center justify-center flex-col text-center pt-10 pb-6">
+      <div className="flex items-center justify-center flex-col text-center pt-14 pb-6">
         <h1 className="text-4xl md:text-6xl mb-1 md:mb-3 font-bold">
           Hi, I am <span className="text-the-blue">{name}.</span>
         </h1>

@@ -8,8 +8,9 @@ export default {
         inter: ["inter", "serif"],
       },
       colors: {
-        'the-blue' : '#2978b5'
-      }
+        "the-blue": "#2978b5",
+        rust: "#e1e1db",
+      },
     },
   },
   plugins: [],
