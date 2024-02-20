@@ -17,6 +17,7 @@ function App() {
         <Timeline />
         <Skills />
         <Contact />
+        <Footer />
       </div>
     </div>
   );
