@@ -53,7 +53,7 @@ const Contact = () => {
               href={link.url}
               target="__blank"
               key={link.id}
-              className="text-gray-300 hover:text-the-blue cursor-pointer rounded-lg bg-gray-50 shadow-sm p-4 duration-300"
+              className="text-gray-500 hover:text-the-blue cursor-pointer rounded-lg bg-gray-50 shadow-sm p-4 duration-300"
             >
               <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
             </a>
