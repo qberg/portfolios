@@ -4,11 +4,13 @@ import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="bg-white min-h-screen font-inter">
       <div className="max-w-4xl w-11/12 mx-auto gap-y-4">
+        <Header />
         <Intro />
         <Projects />
         <Timeline />

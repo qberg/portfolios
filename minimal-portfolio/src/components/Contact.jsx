@@ -4,7 +4,7 @@ import Button from "./ui/Button";
 
 const Contact = () => {
   return (
-    <div>
+    <section id="contact">
       <Title>Get in Touch</Title>
       <div className="flex flex-col items-center justify-center text-center">
         <p className="text-sm max-w-xl mb-6">
@@ -17,7 +17,7 @@ const Contact = () => {
           <Button href="#" text="Say Hello" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
