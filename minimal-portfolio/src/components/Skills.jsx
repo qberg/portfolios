@@ -22,7 +22,7 @@ const Skills = () => {
                 className="h-[44px] w-[44px] inline-block group-hover:scale-125 ease-in-out duration-300"
               />
               <span
-                class="group-hover:opacity-100 transition-opacity bg-the-blue p-1 text-[0.5rem] text-rust absolute left-1/2 
+                class="group-hover:opacity-100 transition-opacity bg-the-blue p-1 text-xs text-rust absolute left-1/2 
     -translate-x-1/2 translate-y-[-3.0rem] opacity-0 m-4 mx-auto max-h-xl max-w-xl"
               >
                 <svg
