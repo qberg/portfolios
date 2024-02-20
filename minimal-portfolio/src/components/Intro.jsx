@@ -2,6 +2,7 @@ import React from "react";
 
 import { about } from "../data/about";
 import Button from "./ui/Button";
+import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
   const { name, role, description, resume, social } = about;

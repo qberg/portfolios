@@ -10,7 +10,6 @@ const Header = () => {
             N<span className="text-the-blue">P</span>G.
           </h1>
         </a>
-        <Navigation />
       </div>
     </header>
   );
