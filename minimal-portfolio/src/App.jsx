@@ -7,11 +7,13 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="m-auto grid max-w-4xl grid-rows-[auto_1fr_auto] gap-y-4">
-      <Intro />
-      <Projects />
-      <Timeline />
-      <Contact />
+    <div className="bg-white min-h-screen font-inter">
+      <div className="max-w-4xl w-11/12 mx-auto gap-y-4">
+        <Intro />
+        <Projects />
+        <Timeline />
+        <Contact />
+      </div>
     </div>
   );
 }
