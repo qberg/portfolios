@@ -1,6 +1,37 @@
 import React from "react";
+import {
+  FiGithub,
+  FiTwitter,
+  FiLinkedin,
+  FiGlobe,
+  FiYoutube,
+} from "react-icons/fi";
+
 import Title from "./Title";
 import Button from "./ui/Button";
+
+const socialLinks = [
+  {
+    id: 1,
+    icon: <FiGlobe />,
+    url: "/",
+  },
+  {
+    id: 2,
+    icon: <FiGithub />,
+    url: "https://github.com/naveen015",
+  },
+  {
+    id: 3,
+    icon: <FiTwitter />,
+    url: "https://twitter.com/example",
+  },
+  {
+    id: 4,
+    icon: <FiLinkedin />,
+    url: "https://www.linkedin.com/in/naveen015",
+  },
+];
 
 const Contact = () => {
   return (
@@ -13,9 +44,21 @@ const Contact = () => {
           free to drop a message. Please be sure to checkout my social media
           profiles as well.
         </p>
-        <div>
+        <div className="mb-2">
           <Button href="#" text="Say Hello" />
         </div>
+        <ul className="flex p-4 gap-4 sm:gap-8">
+          {socialLinks.map((link) => (
+            <a
+              href={link.url}
+              target="__blank"
+              key={link.id}
+              className="text-gray-300 hover:text-the-blue cursor-pointer rounded-lg bg-gray-50 shadow-sm p-4 duration-300"
+            >
+              <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
+            </a>
+          ))}
+        </ul>
       </div>
     </section>
   );
